@@ -1,47 +1,134 @@
-# MERN E-COMMERCE TUTORIAL
-
-Hi! My name is **Abhishek Singh**, I have created this tutorial to teach MERN Stack for free on YouTube.
-
-# Prerequisite
-
-1.  Must have basic knowledge of **Node**, **React**, **Express**, **MongoDB** . _I have made tutorial on each technology on YouTube , make sure to check it out_. **Links are Below respectively**
-2.  Node - https://youtu.be/BSO9C8Z-YV8
-3.  React - https://youtu.be/99kgUCIMboY
-4.  Express - https://youtu.be/teipbke8c4A\
-5.  MongoDB - https://youtu.be/AYDP1S5BbTo
-6.  RestApi - https://youtu.be/AhCSfuG9Jxw _(optional)_
-
 # Install Dependencies
 
 **For Backend** - `npm i`
 
 **For Frontend** - `cd frontend` ` npm i`
+🛒 E-commerce Store — MERN Stack Full-Stack Project
+A full-featured E-Commerce Web Application built using the MERN Stack (MongoDB, Express.js, React.js, Node.js). This project includes User Authentication, Admin Dashboard, Product Management, Cart, Orders, Payment Integration, Reviews & Ratings, and a lot more.
 
-## Env Variables
+🌐 Live Demo
+Frontend: https://your-frontend.vercel.app
+Backend API: https://your-backend.onrender.com/api/v1
+(Update these links after deployment)
 
-Make Sure to Create a config.env file in backend/config directory and add appropriate variables in order to use the app.
+📂 Project Structure
+bash
+Copy code
+E-commerce_Store/
+ ├── backend/       # Node.js + Express + MongoDB (API & Admin)
+ ├── frontend/      # React.js + Redux Toolkit (Client App)
+ ├── uploads/       # (Optional) Local image storage
+ ├── README.md
+ └── .gitignore
+🚀 Features
+User Registration, Login & Profile Management
 
-**Essential Variables**
-PORT=
-DB_URI =
-STRIPE_API_KEY=
-STRIPE_SECRET_KEY=
-JWT_SECRET=
-JWT_EXPIRE=
-COOKIE_EXPIRE=
-SMPT_SERVICE =
-SMPT_MAIL=
-SMPT_PASSWORD=
-SMPT_HOST=
-SMPT_PORT=
-CLOUDINARY_NAME
-CLOUDINARY_API_KEY
-CLOUDINARY_API_SECRET
-_fill each filed with your info respectively_
+JWT Authentication & Authorization (Protected Routes)
 
-## Author
+Product Catalog with Search & Filtering
 
-**Instagram** Click [Here](https://www.instagram.com/meabhisingh) **@meAbhiSingh**
-**YouTube** Click [Here](https://www.youtube.com/channel/UCO7afj9AUo0zV69pqEYhcjw/) **6 Pack Programmer**
-**LinkedIn** Click [Here](https://in.linkedin.com/in/meabhisingh) **@meAbhiSingh**
-**Twitter** Click [Here](https://twitter.com/meAbhi_Singh) **@meAbhi_Singh**
+Product Ratings & Reviews
+
+Shopping Cart & Checkout Process
+
+Payment Gateway Integration (Stripe/Razorpay)
+
+Order Tracking & History
+
+Admin Dashboard for Product, Order, and User Management
+
+Product Image Uploads (Local / Cloudinary)
+
+Fully Responsive UI (Mobile-First Design)
+
+Secure APIs with Role-Based Access Control (RBAC)
+
+🛠️ Tech Stack
+Frontend	Backend	Database
+React.js, Redux Toolkit	Node.js, Express.js	MongoDB
+Axios, React-Router-DOM	JWT Authentication	Mongoose
+TailwindCSS / Bootstrap	Stripe/Razorpay Payment Gateway	
+
+⚙️ Getting Started (Run Locally)
+1. Clone the Repository
+bash
+Copy code
+git clone https://github.com/jatin-k-agarwal/E-commerce_Store.git
+cd E-commerce_Store
+2. Backend Setup
+bash
+Copy code
+cd backend
+npm install
+# Create backend/config/config.env and add necessary variables
+npm start
+3. Frontend Setup
+bash
+Copy code
+cd ../frontend
+npm install
+npm start
+📝 Environment Variables
+Backend (/backend/config/config.env)
+env
+Copy code
+PORT=5000
+DB_URI=your_mongoDB_connection_string
+JWT_SECRET=your_jwt_secret_key
+STRIPE_API_KEY=your_stripe_api_key
+CLOUDINARY_NAME=your_cloudinary_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+Frontend (/frontend/.env)
+env
+Copy code
+REACT_APP_API_URL=https://your-backend-url/api/v1
+🚀 Deployment Guide
+Frontend Deployment (Vercel)
+Go to Vercel
+
+Import your GitHub Repository
+
+Select /frontend as the Root Directory during setup
+
+Add Environment Variable:
+
+env
+Copy code
+REACT_APP_API_URL=https://your-backend-url/api/v1
+Deploy 🚀
+
+Backend Deployment (Render)
+Go to Render
+
+New → Web Service → Connect your GitHub Repo
+
+Select /backend as the Root Directory
+
+Set Build Command: npm install
+
+Start Command: npm start
+
+Add Environment Variables from /backend/config/config.env
+
+Deploy 🚀
+
+📚 Resources
+React Documentation
+
+Redux Toolkit
+
+Express.js Documentation
+
+MongoDB & Mongoose
+
+Stripe Developer Docs
+
+Render Deployment Guide
+
+🙌 Contributing
+Contributions, issues, and feature requests are welcome!
+
+bash
+Copy code
+git clone https://github.com/jatin-k-agarwal/E-commerce_Store.git
