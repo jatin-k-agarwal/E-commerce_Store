@@ -3,6 +3,8 @@
 **For Backend** - `npm i`
 
 **For Frontend** - `cd frontend` ` npm i`
+
+
 🛒 E-commerce Store — MERN Stack Full-Stack Project
 A full-featured E-Commerce Web Application built using the MERN Stack (MongoDB, Express.js, React.js, Node.js). This project includes User Authentication, Admin Dashboard, Product Management, Cart, Orders, Payment Integration, Reviews & Ratings, and a lot more.
 
